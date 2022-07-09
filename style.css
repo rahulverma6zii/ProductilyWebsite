@@ -1,0 +1,320 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0 60px;
+  font-family: "Jost", sans-serif;
+}
+.logo {
+  color: #1f4690;
+  font-size: 30px;
+  margin-top: 20px;
+}
+#logo-image {
+  height: 20px;
+  width: 20px;
+}
+
+/***** headings *****/
+#main-heading {
+  font-size: 60px;
+}
+.sub-heading {
+  padding: 20px;
+  font-size: 30px;
+}
+.center-heading {
+  margin: auto;
+  text-align: center;
+  width: 40%;
+}
+
+/***** End headings *****/
+
+p {
+  /* padding: 20px; */
+  font-size: 14px;
+  font-family: "Raleway", sans-serif;
+
+  margin: 0px;
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-tools > span {
+  padding: 10px;
+}
+.navelements {
+  display: flex;
+  justify-content: end;
+  width: 60%;
+}
+.social-tools {
+  display: flex;
+  cursor: pointer;
+  padding: 20px;
+}
+
+/***** BUTTONS *****/
+.login-button {
+  margin: auto 0px;
+}
+.login-button > button {
+  height: 30px;
+  margin: auto;
+  /* margin-top: 30%; */
+}
+button {
+  width: 100px;
+  border: none;
+  cursor: pointer;
+}
+
+.brand-bgcolor {
+  background-color: orange;
+  color: white;
+  width: auto;
+  box-shadow: none;
+  border: none;
+}
+.brand-color {
+  height: 100%;
+  color: orange;
+  background-color: white;
+  box-shadow: none;
+}
+#superpower-button {
+  margin: 20px 45%;
+  height: 40px;
+  width: 150px;
+}
+.main-button {
+  margin-top: 20px;
+  display: flex;
+}
+.start-button {
+  height: 50px;
+}
+.blogging-button,
+#sign-up-now {
+  margin-top: 25px;
+  height: 40px;
+  width: 150px;
+}
+
+/***** End BUTTONS *****/
+
+/***** SECTIONS *****/
+main {
+  display: flex;
+  height: auto;
+}
+main > div {
+  padding: 20px;
+}
+article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 80px;
+}
+section {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 80px;
+  height: max-content;
+}
+.left-section,
+.right-section {
+  width: 50%;
+  height: 100%;
+}
+#design-tools {
+  display: flex;
+  flex-direction: column;
+}
+#blogging {
+  border-radius: 50%;
+  background-image: linear-gradient(to bottom, #ffecd2 2%, white);
+}
+.blogging:nth-child(n) {
+  width: 100%;
+  text-align: center;
+}
+
+.comment-section {
+  display: flex;
+  justify-content: space-between;
+}
+.comment-section > div {
+  width: 30%;
+  border: 1px solid rgb(179, 171, 171);
+  border-radius: 10px;
+}
+#product-manager {
+}
+#marketing-strategies {
+  flex-direction: column;
+}
+.column-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+footer {
+  margin: 100px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex: 1;
+}
+input {
+  height: 40px;
+}
+/***** End SECTIONS *****/
+
+/***** icons *****/
+
+.font-icons {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+#carousel-icons {
+  align-self: center;
+  color: grey;
+  border: none;
+  cursor: pointer;
+}
+/***** End icons *****/
+
+/***** Images *****/
+
+.image {
+  width: 100%;
+  height: 100%;
+  margin-top: 10%;
+  border-radius: 50%;
+}
+.tool-images {
+  width: 50px;
+  height: 50px;
+  border-radius: 40%;
+  margin: auto;
+  padding: 5px;
+}
+
+.comment-images {
+  height: 150px;
+  width: 200px;
+  align-self: center;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+/***** End Images *****/
+
+/* Mobile Responive */
+@media only screen and (max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    padding: 2%;
+  }
+
+  body {
+    margin: 5px;
+  }
+  .logo {
+    color: #1f4690;
+    font-size: 20px;
+    margin-top: 10px;
+  }
+  #logo-image {
+    height: 20px;
+    width: 20px;
+  }
+  header,
+  main,
+  article,
+  section,
+  footer {
+    flex-direction: column;
+    flex: 1;
+    margin-top: 10px;
+  }
+  .comment-section {
+    flex-direction: column;
+  }
+  .comment-section > div {
+    width: 100%;
+  }
+  footer {
+    margin-bottom: 50px;
+  }
+  footer .column-flex:nth-child(n),
+  h2,
+  button {
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+  }
+  footer button {
+    align-self: center;
+  }
+
+  .left-section,
+  .right-section,
+  .brand-color {
+    width: 100%;
+  }
+
+  .social-tools,
+  hr,
+  #carousel-icons {
+    display: none;
+  }
+  #main-heading {
+    font-size: 5vh;
+    width: 100%;
+  }
+  .center-heading {
+    text-align: center;
+    width: 100%;
+  }
+  /* icon */
+  .font-icons {
+    flex-direction: column;
+    cursor: pointer;
+  }
+  .icon-contain {
+    text-align: center;
+  }
+  #carousel-icons {
+    display: flex;
+    justify-content: center;
+  }
+
+  /* button */
+  button {
+    height: 50px;
+    width: 150px;
+  }
+  .main-button {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .login-button {
+    flex-direction: row;
+    flex: 1;
+  }
+  .login-button > button {
+    width: 50%;
+  }
+  #superpower-button {
+    margin: auto;
+  }
+}
